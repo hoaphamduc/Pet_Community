@@ -1,0 +1,60 @@
+<!-- res/layout/item_post.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- Other post details (e.g., ImageView, username, etc.) -->
+
+    <!-- Button to open full-screen image -->
+    <ImageView
+        android:id="@+id/postImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_margin="10dp"
+        android:src="@drawable/demoavt" />
+
+    <!-- TextViews for post details -->
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Username" />
+
+    <TextView
+        android:id="@+id/postContentEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Post content" />
+
+    <!-- Other post details (e.g., like count, comment count, etc.) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal">
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:onClick="onEditButtonClick"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@null"
+        android:layout_marginRight="50dp"/>
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@null"
+        android:onClick="onDeleteButtonClick" />
+    </LinearLayout>
+</LinearLayout>

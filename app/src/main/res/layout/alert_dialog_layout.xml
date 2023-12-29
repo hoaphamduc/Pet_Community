@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- Hình ảnh demo -->
+    <ImageView
+        android:id="@+id/demoImage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:src="@drawable/demoavt3"
+        android:layout_marginTop="16dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+    <Button
+        android:id="@+id/rollright"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/turnright"
+        app:backgroundTint="#FFEB3B"/>
+    <Button
+        android:id="@+id/rollleft"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/turnleft"
+        app:backgroundTint="#FFEB3B"/>
+    </LinearLayout>
+    <!-- Trường nhập status -->
+    <EditText
+        android:id="@+id/statusEditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Enter status"
+        android:background="@drawable/custom_button2"
+        app:backgroundTint="@null"
+        android:textSize="17dp"
+        android:padding="15dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Nút chọn ảnh -->
+    <Button
+        android:id="@+id/chooseImageButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Choose photo"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_button2"
+        app:backgroundTint="@null"
+        android:layout_marginTop="8dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Pet Community</string>
+    <string-array name="gender_options">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+    <string name="default_notification_channel_id">Pet Community Notification</string>
+
+
+
+</resources>

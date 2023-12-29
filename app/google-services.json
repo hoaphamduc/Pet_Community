@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "345392052988",
+    "firebase_url": "https://petcommunity-104c0-default-rtdb.firebaseio.com",
+    "project_id": "petcommunity-104c0",
+    "storage_bucket": "petcommunity-104c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345392052988:android:3ecb66301ce3d48022b579",
+        "android_client_info": {
+          "package_name": "com.example.petcommunity"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCN1ucbvd0uIFIyDXMP6JsPho8A9GPf4DU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

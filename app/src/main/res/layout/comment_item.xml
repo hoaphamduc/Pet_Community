@@ -1,0 +1,29 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="15dp"
+    android:background="@drawable/custom_button2"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical">
+<!--    <TextView-->
+<!--        android:id="@+id/usernameText"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="usermeo"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_marginLeft="30dp"/>-->
+
+    <TextView
+        android:id="@+id/commentText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comment Text"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:gravity="start"
+        android:textColor="#000000" />
+</LinearLayout>

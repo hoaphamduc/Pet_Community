@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blue"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/editedPostImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/demoavt"
+        android:layout_marginBottom="16dp"/>
+    <!-- Edit Text for Post Content -->
+    <EditText
+        android:id="@+id/editPostContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit your post content"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:background="@drawable/custom_button2"
+        android:layout_below="@id/editedPostImageView"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Image View for Edited Post Image -->
+
+
+    <!-- Button to Save Edited Post -->
+    <Button
+        android:id="@+id/saveEditedPostButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editPostContent"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@null"
+        android:layout_centerHorizontal="true"
+        android:text="Save Changes"/>
+
+</RelativeLayout>
