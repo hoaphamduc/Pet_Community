@@ -562,5 +562,4 @@ public class NewFeedsActivity extends AppCompatActivity {
         matrix.postRotate(degrees);
         return Bitmap.createBitmap(originalBitmap, 0, 0, originalBitmap.getWidth(), originalBitmap.getHeight(), matrix, true);
     }
-
 }

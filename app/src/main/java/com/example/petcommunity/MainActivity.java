@@ -75,16 +75,21 @@ public class MainActivity extends AppCompatActivity {
         userRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                if (dataSnapshot.exists()) {
+                if (dataSnapshot.exists() && dataSnapshot.hasChild("token")) {
                     String token = dataSnapshot.child("token").getValue(String.class);
-                    // Token đã được lấy thành công, sử dụng token cho các chức năng cần thiết
-                    if (appToken.equals(token)){
+
+                    if (token != null && appToken != null && appToken.equals(token)) {
+                        // Token retrieved successfully and matches, start NewFeedsActivity
                         Intent intent = new Intent(MainActivity.this, NewFeedsActivity.class);
                         startActivity(intent);
                         finish();
+                    } else {
+                        // Handle cases where either token or appToken is null
+                        // or they do not match
                     }
                 } else {
-                    // Người dùng không tồn tại trong database
+                    // DataSnapshot does not exist or does not have "token" child
+                    // Handle as needed, e.g., user not found in the database
                 }
             }
 
